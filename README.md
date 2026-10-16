@@ -8,4 +8,8 @@ To address this gap, we developed a semi-automated analytical pipeline combining
 ## Models
 - Available with usage instructions as Hugging Face checkpoints [here](https://huggingface.co/collections/bertrandchauveau/xenium-kidney-tissue-segmentation)
 
+## Creating a 6-channel image from H&E and molecular whole cell annotations
 
+Example:
+
+```python multispectral.py --rgb_dir /content/ --mask_dir /content/ --output_dir /content/output --rgb_name example_he.png --mask_name example_molecular.png```
