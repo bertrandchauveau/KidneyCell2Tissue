@@ -36,6 +36,11 @@ def main():
     path_output = args.output_dir
     path_to_geojson = args.geojson_path
     geojson_name = args.geojson_name
+
+    # check output_dir
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+        print(f"Created output directory: {args.output_dir}")
     
     #list of cell classes (modify if necessary)
     cell_class = ['PT', 'PT_injured', 'DCT', 'CD_principal', 'Intercalated_cells', 'TAL', 'Endothelial', 
