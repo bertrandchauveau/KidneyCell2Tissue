@@ -12,13 +12,21 @@ To address this gap, we developed a semi-automated analytical pipeline combining
 
 Example:
 
-```python multispectral.py --rgb_dir /content/ --mask_dir /content/ --output_dir /content/output --rgb_name example_he.png --mask_name example_molecular.png```
+```
+python multispectral.py \
+    --rgb_dir /content/  \
+    --mask_dir /content/  \
+    --output_dir /content/output  \
+    --rgb_name example_he.png  \
+    --mask_name example_molecular.png
+```
 
 ## Creating cell semantic segmentation tiles from molecular-based cell annotations as geojson
 
 Example:
 
-```python cell_mask_from_geojson.py \
+```
+python cell_mask_from_geojson.py \
     --geojson_path /content/\
     --geojson_name example.geojson \
     --wsi_name my_slide.tiff \
@@ -26,4 +34,5 @@ Example:
     --wsi_width 15000 \
     --output_dir ./my_tiles \
     --tile_size 1024 \
-    --overlap 0.125```
+    --overlap 0.125
+```
